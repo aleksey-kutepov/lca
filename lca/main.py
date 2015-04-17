@@ -81,7 +81,7 @@ def lca(graph, value1, value2):
     # path_to_root require memory for list with size D in worst case.
     # So path_1 and path_2 may require memory for list of 2*D size.
     # common_nodes requires D-1 list in worst case.
-    # So that we have to have memory to store 2*D + D - 1 list elements.
+    # So that we have to have memory to store 3*D - 1 list elements.
     for n in path_1:
         if n in common_nodes:
             return n
