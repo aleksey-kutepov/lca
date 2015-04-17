@@ -92,7 +92,7 @@ def main():
     # print all available combinations
     for one, two in itertools.product(range(1, 10), repeat=2):
         print "lca(graph, {one}, {two}) = {result}".format(
-            one=one, two=two, result = lca(graph, one, two)
+            one=one, two=two, result=lca(graph, one, two)
         )
 
 if __name__ == '__main__':
